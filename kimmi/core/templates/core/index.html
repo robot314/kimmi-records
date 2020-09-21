@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <!-- Cabecera -->
+    {% load static %}
+    
+    <!-- CUERPO -->
+    <main>
+        <!-- BANNER -->
+        <section class="index-banner">
+            <div class="vertical-center">
+                <h1>Kimmi Records</h1>
+                <h2>Record Label</h2>
+            </div>
+        </section>
+
+        <!-- INTRO -->
+        <section>
+            <div class="index-intro">
+                <iframe src="https://www.youtube.com/embed/QvR3SVJlY4U" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+    {% endblock %}
