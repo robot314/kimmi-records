@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'studio.apps.StudioConfig',
+    'texts.apps.TextsConfig',
 ]
 
 MIDDLEWARE = [

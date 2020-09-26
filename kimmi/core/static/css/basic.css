@@ -514,6 +514,104 @@
 
 }
 
+/* LIBRARY */
+
+@media only screen and (min-width: 10px) {
+
+    .texts-banner {
+        width: 100%;
+        height: calc(100vh - 600px);
+        background-color: #111;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: table;
+    }
+
+    .texts-banner h2 {
+        font-family: Caramella;
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 70px;
+        color: #fff;
+        text-align: center;
+        text-shadow: 5px 5px 8px #111;
+    }
+
+    .texts-banner h3 {
+        font-family: Caramella;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 70px;
+        color: #fff;
+        text-align: center;
+        text-shadow: 1px 1px 8px #111;
+    }
+
+    .texts-seccion {
+        width: 100%;
+        background-color: #111;
+        display: table;
+    }
+
+    .texts-cuadro {
+        margin: 8px 16px 0;
+        height: 450px;
+    }
+
+    .texts-imagen{
+        margin: 0;
+        width: 100%;
+        height: 400px;
+        place-items: center;
+    }
+
+    .texts-imagen img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .texts-titulo{
+        margin-top: 15px;
+        font-family: Caramella;
+        font-size: 24px;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    
+    .texts-cuadro {
+        width: calc( ( 100% / 3) - 32px);
+        float: left;
+    }
+
+    .texts-banner {
+        width: 100%;
+        height: 200px;
+        background-color: #111;
+        display: table;
+    }
+
+    .texts-banner h2 {
+        font-size: 56px;
+        font-weight: 900;
+        line-height: 70px;
+        margin-top: 40px;
+    }
+
+    .texts-banner h3 {
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 70px;
+        margin-top: 40px;
+    }
+
+}
+
 /* ######################################## */
 /* ############## FOOTER ################## */
 /* ######################################## */

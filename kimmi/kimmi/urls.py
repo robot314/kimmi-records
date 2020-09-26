@@ -9,6 +9,9 @@ urlpatterns = [
     # Paths Studio
     path('studio/', include('studio.urls')),
 
+    # Paths Texts
+    path('texts/', include('texts.urls')),
+
     # Path Admin
     path('admin/', admin.site.urls),
 ]

@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Library{% endblock %}
+
+{% block content %}
+    <!-- Cabecera -->
+    {% load static %}
+    
+    <!-- CUERPO -->
+    <main style="background-color: #111;">
+        <!-- BANNER -->
+        <section class="texts-banner">
+            <div>
+                <h2>Wellcome to Kimmi Arts Lirary</h2>
+            </div>
+        </section>
+        <div class="wrapper">
+            <section class="texts-seccion">
+                {% for texts in texts %}
+                <div class="texts-cuadro">
+                    <div class="texts-imagen"><a href="{{texts.url}}" target="_blank">
+                        <img src="{{texts.image.url}}" style="width: 100%; height: 100%;" alt=""></a>
+                    </div>
+                    <div class="texts-titulo"><p>{{texts.title}}</p></div>
+                </div>
+                {% endfor %}
+            </section>
+        </div>
+    </main>
+    {% endblock %}

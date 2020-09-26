@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <title>{% block title %}{% endblock %} | Kimmi Records</title>
+    <title>{% block title %}{% endblock %} | Kimmi Arts</title>
 
     {% load static %}
     <!-- Bootstrap CSS -->
@@ -20,7 +20,7 @@
     <nav class="nav-letters navbar navbar-expand-lg navbar-dark" style="text-align: center;">
         <a class="navbar-brand" href="{% url 'home' %}">
             <img src="https://i.imgur.com/pM9hNaa.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"></a>
-        <a class="navbar-brand" href="{% url 'home' %}">Kimmi Records </a>
+        <a class="navbar-brand" href="{% url 'home' %}">Kimmi Arts </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,6 +32,9 @@
             </li>
             <li class="nav-item {% if request.path == "/studio/" %}active{% endif %}">
                 <a class="nav-link" href="{% url 'studio' %}">Studio</a>
+            </li>
+            <li class="nav-item {% if request.path == "/texts/" %}active{% endif %}">
+                <a class="nav-link" href="{% url 'texts' %}">Library</a>
             </li>
             <li class="nav-item {% if request.path == "/about/" %}active{% endif %} ">
                 <a class="nav-link" href="{% url 'about' %}">About us</a>
@@ -60,6 +63,7 @@
             <ul>
                 <li><a href="{% url 'home' %}">Home</a></li>
                 <li><a href="{% url 'studio' %}">Studio</a></li>
+                <li><a href="{% url 'texts' %}">Library</a></li>
                 <li><a href="{% url 'about' %}">About</a></li>
                 <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
@@ -80,7 +84,7 @@
         <p class="m-0 mbt1">&copy; Kimmi Arts </p>
     </div>
     <div class="wrapper footer-copyright-div">
-        <p class="m-0 mbt1">&copy; Designed by Robot314</p>
+        <p class="m-0 mbt1">Designed by Robot314</p>
     </div>
 
     <!-- ################################################################### -->
